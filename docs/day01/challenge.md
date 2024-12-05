@@ -7,7 +7,7 @@ He is not completely happy with the implementation as he famously made a couple 
 
 That year, Teo had to fix it to manually send messages so the reindeers arrived the very day before Chritmas happened! 📣
 
-What could you do to help him? 
+What could you do to help him?  
 
 Let's try to make sure the code is more explicit.
 
