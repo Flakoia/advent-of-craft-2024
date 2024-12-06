@@ -127,24 +127,24 @@ public SantaCommunicator(int numberOfDaysToRest) {
     this.numberOfDaysToRest = numberOfDaysToRest;
 }
 
-public SantaCommunicator(Configuration configuration) {
+public SantaCommunicator(games.Configuration configuration) {
     this(configuration.numberOfDaysToRest());
 }
 ```
 
-- We can store the `Configuration` in a private field
+- We can store the `games.Configuration` in a private field
   - And use it in the methods below
 
 ```java
 public class SantaCommunicator {
     private final int numberOfDaysToRest;
-    private Configuration configuration;
+    private games.Configuration configuration;
 
     public SantaCommunicator(int numberOfDaysToRest) {
         this.numberOfDaysToRest = numberOfDaysToRest;
     }
 
-    public SantaCommunicator(Configuration configuration) {
+    public SantaCommunicator(games.Configuration configuration) {
         this(configuration.numberOfDaysToRest());
         this.configuration = configuration;
     }
@@ -183,9 +183,9 @@ public class SantaCommunicator {
 
 ```java
 public class SantaCommunicator {
-    private final Configuration configuration;
+    private final games.Configuration configuration;
 
-    public SantaCommunicator(Configuration configuration) {
+    public SantaCommunicator(games.Configuration configuration) {
         this.configuration = configuration;
     }
 
@@ -221,7 +221,7 @@ class SantaCommunicatorTest {
 
     @BeforeEach
     void setup() {
-        this.communicator = new SantaCommunicator(new Configuration(numberOfDaysToRest, numberOfDayBeforeChristmas));
+        this.communicator = new SantaCommunicator(new games.Configuration(numberOfDaysToRest, numberOfDayBeforeChristmas));
     }
 
     @Test

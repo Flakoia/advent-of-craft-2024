@@ -9,8 +9,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static games.FizzBuzz.MAX;
-import static games.FizzBuzz.MIN;
+import static games.Configuration.MAX;
+import static games.Configuration.MIN;
 import static io.vavr.API.List;
 import static io.vavr.API.Some;
 import static io.vavr.test.Arbitrary.integer;

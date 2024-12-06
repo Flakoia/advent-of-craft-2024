@@ -84,7 +84,7 @@ Notice how simple it is to extend the program 😉
 🔴 we start by adapting a test
 
 ```kotlin
-FizzBuzz.convert(Configuration.mapping, input).shouldBeSome(expectedResult)
+FizzBuzz.convert(games.Configuration.mapping, input).shouldBeSome(expectedResult)
 ```
 
 🟢 we add the parameter through our IDE
@@ -94,7 +94,7 @@ FizzBuzz.convert(Configuration.mapping, input).shouldBeSome(expectedResult)
 and generate the configuration
 
 ```kotlin
-object Configuration {
+object games.Configuration {
     val mapping = mapOf<Int, String>()
 }
 ```
@@ -154,7 +154,7 @@ fun Map<Int, String>.generateValidStrings(): List<String> =
             .map { second -> first.key * second.key to first.value + second.value }
     }.toMap().values
 
-fun validStringsFor(x: Int): List<String> = Configuration.mapping.generateValidStrings() + x.toString()
+fun validStringsFor(x: Int): List<String> = games.Configuration.mapping.generateValidStrings() + x.toString()
 ```
 
 Now that the values are configured, how should we call the `FizzBuzz` class? 🧐
