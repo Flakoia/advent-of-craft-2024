@@ -9,6 +9,7 @@ public class Configuration {
     public static final Map<Integer, String> mapping = LinkedHashMap.of(
             15, "FizzBuzz",
             3, "Fizz",
-            5, "Buzz"
+            5, "Buzz",
+            7, "Whizz"
     );
 }
