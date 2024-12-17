@@ -54,6 +54,12 @@ public class ShoppingSleigh {
                         }
                     }
                     case TWO_FOR_ONE -> {
+                        x = 2;
+                        int numberOfXs = quantityAsInt / x;
+                        if (quantityAsInt > 2) {
+                            double discountAmount = quantity * unitPrice - ((numberOfXs * 2 * unitPrice) + quantityAsInt % 3 * unitPrice);
+                            discount = new Discount(p, "3 for 2", -discountAmount);
+                        }
                     }
                     case FIVE_FOR_AMOUNT -> {
                         x = 5;
