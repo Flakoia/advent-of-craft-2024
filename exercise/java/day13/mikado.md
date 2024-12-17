@@ -3,6 +3,7 @@
     - [ ] Change all if by a switch
       - [X] Transform all if to else if
       - [X] Create duplication to have 3 if
+      - [X] Correct all if with IDE recommandation
   - [ ] 👍Implement the `Two for one` discount computation
     - [ ] ...
   - [ ] 👍Refactor the existing code to use the `X for Y` discount computation method with the `Three for two` discount
