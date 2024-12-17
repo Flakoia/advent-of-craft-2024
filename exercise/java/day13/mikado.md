@@ -6,6 +6,7 @@
       - [X] Correct all if with IDE recommandation
   - [ ] 👍Implement the `Two for one` discount computation
     - [X] Add two for one into SpecialOFferTimeEnum
+    - [ ] Implement branch two for one in shooping sleigh
   - [ ] 👍Refactor the existing code to use the `X for Y` discount computation method with the `Three for two` discount
 - [ ] Parking-Lot (any change with no direct impact on the main goal)
   - [ ] ...

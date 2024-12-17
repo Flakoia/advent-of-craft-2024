@@ -53,6 +53,8 @@ public class ShoppingSleigh {
                             discount = new Discount(p, "2 for " + offer.argument, -discountN);
                         }
                     }
+                    case TWO_FOR_ONE -> {
+                    }
                     case FIVE_FOR_AMOUNT -> {
                         x = 5;
                         int numberOfXs = quantityAsInt / x;
