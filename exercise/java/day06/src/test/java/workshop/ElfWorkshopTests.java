@@ -24,6 +24,7 @@ public class ElfWorkshopTests {
         var workshop = new ElfWorkshop();
         workshop.addTask("Paint bicycle");
         assertThat(workshop.getTaskList()).contains("Paint bicycle");
+        assertThat(workshop.getTaskList().size()).isEqualTo(1);
     }
 
     @Test
